@@ -1,0 +1,145 @@
+{
+    "basics": {
+        "name": "Krystian Owczarek",
+        "label": "Full-Stack Developer",
+        "email": "krystian.owczarek@onet.pl",
+        "phone": "882670786",
+        "picture": "mt.png",
+        "x_title": "Hello, I'm",
+        "job1": "Full-Stack",
+        "job2": "Developer",
+        "description": "Hello! I'm Krystian! Your application writing specialist. I am passionate about programming websites, web applications, and mobile applications. I invite you to collaborate!",
+        "summary": "based in Poznań, Poland.",
+        "keywords": "personal,website,portfolio,template,kit,mark,tan,taniyow,webdev,web,developer,angeles,philippines,react,github,linkedin,google,gitlab,telegram,material,design,ui,webapp,markdown,Osobiste,strona internetowa, portfolio, szablon, zestaw, marka,materiał,projektowanie,interfejs użytkownika,aplikacja internetowa,programista,programmer,aplikacje,application",
+        "url": "https://taniyow.vercel.app/",
+        "location": {
+            "address": "",
+            "postalCode": "",
+            "city": "",
+            "country": "",
+            "countryCode": "",
+            "region": ""
+        },
+        "profiles": [
+            {
+                "network": "Onet",
+                "username": "krystian.owczarek@onet.pl",
+                "url": "mailto:krystian.owczarek@onet.pl",
+                "x_icon": "fas fa-envelope"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "Krystian Owczarek",
+                "url": "https://www.linkedin.com/in/krystian-owczarek-603950301/",
+                "x_icon": "fab fa-linkedin-in"
+            },
+            {
+                "network": "Instagram",
+                "username": "krystian.owczarek99",
+                "url": "https://www.instagram.com/krystian.owczarek99/",
+                "x_icon": "fab fa-instagram"
+            },
+            {
+                "network": "GitHub",
+                "username": "KrystianOwczarek",
+                "url": "https://github.com/KrystianOwczarek",
+                "x_icon": "fab fa-github"
+            },
+            {
+                "network": "Telegram",
+                "username": "krystianowczarek",
+                "url": "https://t.me/krystianowczarek",
+                "x_icon": "fab fa-telegram-plane"
+            },
+            {
+                "network": "Whatsapp",
+                "username": "Krystian Owczarek",
+                "url": "https://wa.me/+48882670786",
+                "x_icon": "fab fa-whatsapp"
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "Company",
+            "position": "President",
+            "website": "http://company.com",
+            "startDate": "2013-01-01",
+            "endDate": "2014-01-01",
+            "summary": "Description...",
+            "highlights": ["Started the company"]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Organization",
+            "position": "Volunteer",
+            "website": "http://organization.com/",
+            "startDate": "2012-01-01",
+            "endDate": "2013-01-01",
+            "summary": "Description...",
+            "highlights": ["Awarded 'Volunteer of the Month'"]
+        }
+    ],
+    "education": [
+        {
+            "institution": "University",
+            "area": "Software Development",
+            "studyType": "Bachelor",
+            "startDate": "2011-01-01",
+            "endDate": "2013-01-01",
+            "gpa": "4.0",
+            "courses": ["DB1101 - Basic SQL"]
+        }
+    ],
+    "awards": [
+        {
+            "title": "Award",
+            "date": "2014-11-01",
+            "awarder": "Company",
+            "summary": "There is no spoon."
+        }
+    ],
+    "publications": [
+        {
+            "name": "Publication",
+            "publisher": "Company",
+            "releaseDate": "2014-10-01",
+            "website": "http://publication.com",
+            "summary": "Description..."
+        }
+    ],
+    "skills": [
+        {
+            "name": "Web Development",
+            "level": "Master",
+            "keywords": ["HTML", "CSS", "Javascript"]
+        }
+    ],
+    "languages": [
+        {
+            "language": "German",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "English",
+            "fluency": "Fluent speaker"
+        },
+        {
+            "language": "French",
+            "fluency": "Good knowledge"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Wildlife",
+            "keywords": ["Ferrets", "Unicorns"]
+        }
+    ],
+    "references": [
+        {
+            "name": "Jane Doe",
+            "reference": "Reference..."
+        }
+    ]
+}
