@@ -65,21 +65,21 @@ const decryptOptions = {
 };
 
 export const TextDecrypt = (props) => {
-    const { result, dencrypt } = useDencrypt(decryptOptions);
+    const [value, setValue] = useDencrypt(decryptOptions);
 
     useEffect(() => {
         const updateText = () => {
-            dencrypt(props.text || "");
+            setValue(props.text || "");
         };
 
         const action = setTimeout(updateText, 0);
 
         return () => clearTimeout(action);
-    }, [dencrypt, props.text]);
+    }, [props.text]);
 
     return (
         <p>
-          {result}
+          {value}
           {" "}
         </p>
     );

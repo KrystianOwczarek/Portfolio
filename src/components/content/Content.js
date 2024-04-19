@@ -32,6 +32,7 @@ export const Content = () => {
       <div className={classes.heading}>
         <Typography variant="h5" component="h2">
             <TextDecrypt text={`${FirstName} ${LastName}`} />
+            {console.log(TextDecrypt)}
         </Typography>
         <Typography variant="h1" component="h1" className={classes.jobs}>
             <TextDecrypt text={`${Resume.basics.job1}`} />
