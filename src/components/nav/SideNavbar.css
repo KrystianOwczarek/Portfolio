@@ -4,7 +4,7 @@ nav {
   flex-direction: row-reverse;
   transform: rotate(-90deg) translate3d(-50%,0,0);
   top: 15%;
-  left: -6.5rem;
+  left: -8.5rem;
 }
 nav a {
   margin-right: 20px;
@@ -18,4 +18,39 @@ nav a:hover {
 }
 nav a.active {
   color: #E2BF36;
+}
+
+@media screen and (max-width: 480px){
+  #works .description{
+    width: 80%;
+  }
+
+  #contact .contact_msg{
+    font-size: 3rem;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #skills .row{
+    margin-left: 2.45rem;
+    margin-right: 0;
+    width: 80%;
+  }
+  
+  #skills .MuiTypography-h5{
+    margin-left: 4.3rem;
+  }
+
+  .makeStyles-svg-2{
+    left: 20px !important;
+  }
+
+  .makeStyles-speedDial-15 {
+    right: 20px !important;
+  }
+
+  .makeStyles-iconButton-6{
+    right: 33px !important;
+  }
 }
