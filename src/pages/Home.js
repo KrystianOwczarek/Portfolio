@@ -5,6 +5,7 @@ import { Hidden } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import DisplacementSphere from '../components/background/DisplacementSphere';
 import { ThemeToggle } from '../components/theme/ThemeToggle';
+import { LanguageToggle } from '../components/language/LanguageToggle';
 import { Resume } from '../components/resume/Resume';
 import { SocialIcons } from '../components/content/SocialIcons';
 import { SpeedDials } from '../components/speedDial/SpeedDial';
@@ -31,6 +32,7 @@ export const Home = () => {
         <DisplacementSphere />
         <LogoLink />
         <Content />
+        <LanguageToggle />
         <ThemeToggle />
         <Hidden smDown>
           <SocialIcons />

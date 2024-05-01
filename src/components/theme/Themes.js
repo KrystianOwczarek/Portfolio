@@ -28,6 +28,7 @@ export const LightTheme = responsiveFontSizes(
       htmlFontSize: 16,
       h1: {
         fontWeight: 500,
+        color: black
       },
       h2: {
         fontWeight: 500,
@@ -126,6 +127,7 @@ export const DarkTheme = responsiveFontSizes(
       htmlFontSize: 16,
       h1: {
         fontWeight: 500,
+        color: white
       },
       h2: {
         fontWeight: 500,
