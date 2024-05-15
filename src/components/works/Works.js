@@ -5,7 +5,7 @@ import { Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "../content/TextDecrypt";
 import { Typography } from "@material-ui/core";
-
+import { useTranslation } from 'react-i18next';
 import './Works.css';
 
 // Import ../../assets/recentprojects/
@@ -23,19 +23,20 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export const Works = () => {
+  const { t } = useTranslation();
   const classes = useStyles();
   const [projects, setProjects] = useState([
     { 
       id: 1,
       title: 'Hal 3D Configurator', 
       description: `The Hal 3D Configurator project is an advanced web application designed to provide users with an immersive experience of customizing virtual spaces. Built upon the powerful Three.js framework, it allows users to interactively design and personalize various aspects of halls.`,
-      alter: 'Hal 3D Configurator',
+      alter: t('Hal 3D Configurator'),
       image: `${Configurator}`,
       url: 'https://konfigurator-hal-sk-system.vercel.app'
     },
     { 
       id: 2,
-      title: 'Dzień Dobry Doktorze', 
+      title: 'Good Morning Doctor', 
       description: `This application is used by pharmaceutical company representatives to schedule visits to doctors. It offers numerous functionalities, including setting vacations, determining the number of visits per day, specifying days without representatives, and, on the representatives' side, options such as notifying doctors via SMS upon the representative's arrival, adding selected doctors from the database, among others. The application also includes an admin panel, from which messages can be sent to doctors and representatives via the built-in mailbox within the application, as well as managing accounts.`,
       alter: 'Dzień Dobry Doktorze',
       image: `${DDD}`,
@@ -63,17 +64,16 @@ export const Works = () => {
     <section id="works">
       <Container component="main" className={classes.main} maxWidth="md">
         {projects.map((project) => {
-          console.log(project)
           return (<div className="project" key={ project.id }>
             <div className="__img_wrapper">
               <img src={ project.image } alt={ project.alter }/>
             </div>
             <div className="__content_wrapper">
-              <h3 className="title" style={(project.title === 'Inbound appointment Slam Oschatz' ? { marginLeft: '2rem' } : {})}>
-                <TextDecrypt text={ project.id + '. ' + project.title } />
+              <h3 className="title" style={(project.title === 'Inbound appointment Slam Oschatz' || project.title === 'Spotkanie przychodzące Slam Oschatz' ? { marginLeft: '2rem' } : {})}>
+                <TextDecrypt text={ project.id + '. ' + t(project.title) } />
               </h3>
               <p className="description">
-                { project.description }
+                { t(project.description) }
               </p>
               {(project.title === 'Inbound appointment Slam Oschatz' ? '' :  <div style={{ display: 'flex', width: '100%', justifyContent: 'flex-end'}}><a style={{ textDecoration: 'none' }} href={project.url} target="_blank"><button className="submit-btn" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '80px', height: '40px', margin: '10px' }}><Typography component='span'>Live</Typography></button></a></div>)}
             </div>

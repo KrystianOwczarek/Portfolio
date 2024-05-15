@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
 import { TbBrandCSharp } from "react-icons/tb";
 import {
@@ -29,15 +29,21 @@ import {
 } from "react-icons/si";
 import { TextDecrypt } from "../content/TextDecrypt";
 import { Typography } from "@material-ui/core";
+import { ThemeContext } from "../theme/ThemeProvider";
+import { useTranslation } from 'react-i18next';
 
 function Techstack() {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { t } = useTranslation();
+
+  useEffect(() => { console.log(theme) }, [theme]);
 
   return (
       <section id='skills'>
         <Typography style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '1.5rem' }} component='h2' variant="h5">
-          <TextDecrypt text={`Professional Skillset`} />
+          <TextDecrypt text={t(`Professional Skillset`)} />
         </Typography>
-        <Row style={{ display: 'flex', justifyContent: "center", flexFlow: "row wrap", paddingBottom: "50px" }}>
+        <Row style={{ display: 'flex', justifyContent: "center", flexFlow: "row wrap", paddingBottom: "50px" }} className={theme === 'light' ? 'black' : 'white'}>
           <Col xs={4} md={2} className="tech-icons">
             <DiHtml5 />
           </Col>

@@ -2,10 +2,11 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Link } from '@material-ui/core';
 import { TextDecrypt } from '../content/TextDecrypt';
-import ResumePDF from './../../assets/KrystianOwczarekCV.pdf';
+import ResumePDF from './../../assets/Krystian_Owczarek_CV.pdf';
 import {
   ResumeIcon
 } from '../content/ResumeButton';
+import { useTranslation } from 'react-i18next';
 
 const useStyles = makeStyles((theme) => ({
   footerText: {
@@ -25,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
 
 export const Resume = () => {
   const classes = useStyles();
+  const { t } = useTranslation();
 
   return (
     <Link
@@ -37,7 +39,7 @@ export const Resume = () => {
     >
       <ResumeIcon />
       <Typography component='span'>
-        <TextDecrypt text={' Resume'} />
+        <TextDecrypt text={t(' Resume')} />
       </Typography>
     </Link>
   );

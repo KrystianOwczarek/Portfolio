@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { ThemeContext } from "../theme/ThemeProvider";
 import { Tooltip, IconButton, Zoom } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import { Brightness4, Brightness7 } from "@material-ui/icons";
+import { useTranslation } from 'react-i18next';
 
 const useStyles = makeStyles((theme) => ({
   iconButton: {
@@ -17,30 +17,27 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const LanguageToggle = () => {
-    const { theme, toggleTheme } = useContext(ThemeContext);
+export const LanguageToggle = (props) => {
     const classes = useStyles();
-
-    const toggleLanguage = () => {
-      alert('language toogled');
-    }
+    const { t, i18n } = useTranslation();
 
     return (
       <Tooltip
-        title={"Toggle language"}
+        title={t("Toggle language")}
         placement="right"
         TransitionComponent={Zoom}
       >
         <IconButton
           color="inherit"
-          onClick={toggleLanguage}
-          aria-label={"Toggle theme"}
+          onClick={props.toggleLanguage}
+          style={{ bottom: '105px' }}
+          aria-label={"Toggle language"}
           className={classes.iconButton}
         >
-          {theme === "light" ? (
-              <Brightness4 className={classes.icon} />
+          {i18n.language === "pl" ? (
+              <strong>EN</strong>
           ) : (
-              <Brightness7 className={classes.icon} />
+              <strong>PL</strong>
           )}
         </IconButton>
       </Tooltip>

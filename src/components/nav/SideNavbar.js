@@ -3,11 +3,12 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
 import { useState } from "react";
-
+import { useTranslation } from 'react-i18next';
 import "./SideNavbar.css";
 
 export const SideNavbar = () => {
   const [activeNav, setActiveNav] = useState('#');
+  const {t} = useTranslation();
 
   return (
     <nav style={{ zIndex: '100' }}>
@@ -16,7 +17,7 @@ export const SideNavbar = () => {
         className={activeNav === '#' ? 'active' : ''}
       >
         <Typography>
-          Home
+          {t('Home')}
         </Typography>
       </a>
       <a href="#works"
@@ -24,7 +25,7 @@ export const SideNavbar = () => {
         className={activeNav === '#works' ? 'active' : ''}
       >
         <Typography>
-          Projects
+        {t('Projects')}
         </Typography>
       </a>
       <a href="#about" 
@@ -32,7 +33,7 @@ export const SideNavbar = () => {
         className={activeNav === '#about' ? 'active' : ''}
       >
         <Typography>
-          About
+        {t('About')}
         </Typography>
       </a>
       <a href="#skills" 
@@ -40,7 +41,7 @@ export const SideNavbar = () => {
         className={activeNav === '#skills' ? 'active' : ''}
       >
         <Typography>
-          Skills
+        {t('Skills')}
         </Typography>
       </a>
       <a href="#contact"
@@ -48,7 +49,7 @@ export const SideNavbar = () => {
         className={activeNav === '#contact' ? 'active' : ''}
       >
         <Typography>
-          Contact
+        {t('Contact')}
         </Typography>
       </a>
     </nav>

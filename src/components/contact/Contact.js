@@ -5,6 +5,7 @@ import { Container, Typography, TextField, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "../content/TextDecrypt";
 import Swal from 'sweetalert2';
+import { useTranslation } from 'react-i18next';
 
 import emailjs from '@emailjs/browser';
 
@@ -28,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 export const Contact = () => {
+  const { t } = useTranslation();
   const classes = useStyles();
   const greetings = "Say hello.";
 
@@ -62,7 +64,7 @@ export const Contact = () => {
               <form ref={form} onSubmit={sendEmail} className={classes.form}>
                 <TextField
                   id="outlined-name-input"
-                  label="Name"
+                  label={t("Name")}
                   type="text"
                   size="small"
                   variant="filled"
@@ -80,7 +82,7 @@ export const Contact = () => {
                 />
                 <TextField
                   id="outlined-password-input"
-                  label="Message"
+                  label={t("Message")}
                   type="textarea"
                   size="small"
                   multiline
@@ -91,12 +93,12 @@ export const Contact = () => {
                 />
                 <button type="submit" value="Send" className="submit-btn">
                 <i className="fas fa-terminal"></i>
-                  <Typography component='span'> Send Message</Typography>
+                  <Typography component='span'> {t('Send Message')}</Typography>
                 </button>
               </form>
             </div>
             <h1 className="contact_msg">
-              <TextDecrypt text={greetings}/>
+              <TextDecrypt text={t(greetings)}/>
             </h1>
           </div>
         </Container>

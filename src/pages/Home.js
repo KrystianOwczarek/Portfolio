@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { LogoLink } from '../components/logo/LogoLink';
 import { Content } from '../components/content/Content';
 import { Hidden } from '@material-ui/core';
@@ -14,6 +14,8 @@ import { Works } from '../components/works/Works';
 import { About } from '../components/about/About';
 import { Contact } from '../components/contact/Contact';
 import Skillset from '../components/about/Skillset';
+import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -24,7 +26,13 @@ const useStyles = makeStyles(() => ({
 }));
 
 export const Home = () => {
+  const { i18n } = useTranslation();
+
   const classes = useStyles();
+
+  const toggleLanguage = () => {
+    i18next.changeLanguage(i18n.language === 'pl' ? 'en' : 'pl');
+  }
 
   return (
     <>
@@ -32,7 +40,7 @@ export const Home = () => {
         <DisplacementSphere />
         <LogoLink />
         <Content />
-        <LanguageToggle />
+        <LanguageToggle toggleLanguage={toggleLanguage} />
         <ThemeToggle />
         <Hidden smDown>
           <SocialIcons />

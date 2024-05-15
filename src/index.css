@@ -49,6 +49,19 @@ h3{
   font-size: 6rem;
 }
 
+.white{
+  color: white;
+}
+
+.black{
+  color: black;
+}
+
+strong{
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+}
+
 .tech-icons {
   display: flex;
   justify-content: center;

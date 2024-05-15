@@ -24,6 +24,17 @@ nav a.active {
   left: 30px !important;
 }
 
+.makeStyles-socialIcons-15{
+  z-index: 1;
+}
+
+.makeStyles-iconButton-6{
+  z-index: 1;
+}
+
+.makeStyles-socialIcons-17{
+  z-index: 1;
+}
 
 @media screen and (max-width: 480px){
   #works .description{
@@ -52,10 +63,18 @@ nav a.active {
   }
 
   .makeStyles-speedDial-15 {
-    right: 20px !important;
+    right: 8px !important;
+  }
+
+  .makeStyles-speedDial-24{
+    right: 8px !important;
   }
 
   .makeStyles-iconButton-6{
-    right: 33px !important;
+    right: 21px !important;
+  }
+
+  .makeStyles-iconButton-22{
+    right: 21px !important;
   }
 }

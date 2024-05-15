@@ -5,6 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "../content/TextDecrypt";
 import { FirstName, LastName } from "../../utils/getName";
 import Tilt from 'react-parallax-tilt';
+import { useTranslation } from 'react-i18next';
 
 import './About.css';
 
@@ -19,12 +20,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export const About = () => {
+  const { t } = useTranslation();
   const classes = useStyles();
   const greetings = "Hello there!";
-  const aboutme = `I'm ${FirstName} ${LastName}, a multidisciplinary 
-                  designer & developer. I'm always down for something new and challenging!
-                  I'm here to help you create beautifully formatted websites. 
-                  My projects mostly includes web development.`;
 
   return (
     <section id="about">
@@ -43,14 +41,14 @@ export const About = () => {
           </Tilt>
           <div className="_content_wrapper">
             <Typography component='h2' variant="h5">
-              <TextDecrypt text={`${greetings}`} />
+              <TextDecrypt text={`${t(greetings)}`} />
             </Typography>
             <p className="aboutme">
-              {aboutme}
+                  {t(`I'm Krystian Owczarek, a multidisciplinary designer & developer. I'm always down for something new and challenging! I'm here to help you create beautifully formatted websites. My projects mostly includes web development.`)}
             </p>
             <a href="#contact" className="contact-btn">
               <i className="fas fa-terminal"></i>
-              <Typography component='span'> Send me a message.</Typography>
+              <Typography component='span'> {t('Send me a message.')}</Typography>
             </a>
           </div>
         </div>
