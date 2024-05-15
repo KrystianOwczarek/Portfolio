@@ -58,23 +58,15 @@ nav a.active {
     margin-left: 4.3rem;
   }
 
-  .makeStyles-svg-2{
-    left: 20px !important;
+  .MuiSpeedDial-root{
+    right: 25px !important;
   }
 
-  .makeStyles-speedDial-15 {
-    right: 8px !important;
+  .MuiIconButton-root{
+    right: 38px !important;
   }
 
-  .makeStyles-speedDial-24{
-    right: 8px !important;
-  }
-
-  .makeStyles-iconButton-6{
-    right: 21px !important;
-  }
-
-  .makeStyles-iconButton-22{
-    right: 21px !important;
+  .MuiLink-underlineNone {
+    left: 28px !important;
   }
 }
