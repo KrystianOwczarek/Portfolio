@@ -31,6 +31,7 @@ export const ThemeToggle = () => {
       >
         <IconButton
           color="inherit"
+          style={{ zIndex: '1' }}
           onClick={toggleTheme}
           aria-label={"Toggle theme"}
           className={classes.iconButton}

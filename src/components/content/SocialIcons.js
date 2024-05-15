@@ -48,5 +48,5 @@ export const SocialIcons = () => {
     </Link>
   ));
 
-  return <div className={classes.socialIcons}>{socialItems}</div>;
+  return <div className={classes.socialIcons} id='zIndex'>{socialItems}</div>;
 };
