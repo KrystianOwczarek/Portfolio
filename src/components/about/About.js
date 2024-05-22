@@ -44,7 +44,7 @@ export const About = () => {
               <TextDecrypt text={`${t(greetings)}`} />
             </Typography>
             <p className="aboutme">
-                  {t(`I'm Krystian Owczarek, a multidisciplinary designer & developer. I'm always down for something new and challenging! I'm here to help you create beautifully formatted websites. My projects mostly includes web development.`)}
+                  {t(`My name is Krystian Owczarek, and I am a programmer. I am always ready for new and challenging tasks. I specialize in creating beautifully formatted websites and applications. My projects mainly involve the development of websites, web applications, and mobile applications. I am here to help you realize your technological visions.`)}
             </p>
             <a href="#contact" className="contact-btn">
               <i className="fas fa-terminal"></i>

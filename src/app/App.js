@@ -7,7 +7,6 @@ import { CssBaseline } from "@material-ui/core";
 import { logCredits } from "../utils/logCredits";
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
-
 import { Home } from "../pages/Home";
 
 // const Resume = lazy(() => import("../pages/Resume"));
