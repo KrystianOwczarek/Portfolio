@@ -35,10 +35,14 @@ export const Contact = () => {
 
   const form = useRef();
 
+
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('service_gpnyjmu', 'template_vurr4ao', form.current, 'aIUXDF1E27inXVykg')
+    const name = document.querySelector('input#outlined-name-input')
+    const email = document.querySelector('input#outlined-password-input')
+    const message = document.querySelector('textarea[name="message"]')
+    if(name.value !== '' && email.value !== '' && message.value !== ''){
+      emailjs.sendForm('service_gpnyjmu', 'template_vurr4ao', form.current, 'aIUXDF1E27inXVykg')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -52,6 +56,15 @@ export const Contact = () => {
       timer: 1500
     })
     e.target.reset()
+    }else{
+      Swal.fire({
+        position: 'center',
+        icon: 'error',
+        title: 'Please complete all fields!',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    }
   };
 
 
