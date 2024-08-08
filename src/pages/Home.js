@@ -38,7 +38,7 @@ export const Home = () => {
     <>
       <div className={classes.root} id="home">
         <DisplacementSphere />
-        {/* <LogoLink /> */}
+        <LogoLink />
         <Content />
         <LanguageToggle toggleLanguage={toggleLanguage} />
         <ThemeToggle />

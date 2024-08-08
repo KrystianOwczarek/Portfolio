@@ -1,6 +1,6 @@
 {
-    "name": "CodeSons",
-    "short_name": "CodeSons",
+    "name": "",
+    "short_name": "",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,8 +13,7 @@
             "type": "image/png"
         }
     ],
-    "start_url": ".",
-    "display": "standalone",
-    "theme_color": "#00bfbf",
-    "background_color": "#171c28"
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
 }

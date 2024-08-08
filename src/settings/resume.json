@@ -2,29 +2,29 @@
     "basics": {
         "name": "Krystian Owczarek",
         "label": "Full-Stack Developer",
-        "email": "krystian.owczarek@onet.pl",
+        "email": "kontakt@codesons.com",
         "phone": "882670786",
-        "picture": "mt.png",
+        "picture": "",
         "x_title": "Hello, I'm",
         "job1": "Full-Stack",
         "job2": "Developer",
         "description": "Hello! I'm Krystian! Your application writing specialist. I am passionate about programming websites, web applications, and mobile applications. I invite you to collaborate!",
         "summary": "based in Poznań, Poland.",
         "keywords": "personal,website,portfolio,template,kit,mark,tan,taniyow,webdev,web,developer,angeles,philippines,react,github,linkedin,google,gitlab,telegram,material,design,ui,webapp,markdown,Osobiste,strona internetowa, portfolio, szablon, zestaw, marka,materiał,projektowanie,interfejs użytkownika,aplikacja internetowa,programista,programmer,aplikacje,application",
-        "url": "https://taniyow.vercel.app/",
+        "url": "https://www.codesons.com",
         "location": {
             "address": "",
-            "postalCode": "",
-            "city": "",
-            "country": "",
-            "countryCode": "",
-            "region": ""
+            "postalCode": "63-440",
+            "city": "Ostrów Wielkopolski",
+            "country": "Polska",
+            "countryCode": "PL",
+            "region": "Wielkopolski"
         },
         "profiles": [
             {
-                "network": "Onet",
-                "username": "krystian.owczarek@onet.pl",
-                "url": "mailto:krystian.owczarek@onet.pl",
+                "network": "domena.pl",
+                "username": "kontakt@codesons.com",
+                "url": "mailto:kontakt@codesons.com",
                 "x_icon": "fas fa-envelope"
             },
             {
@@ -35,8 +35,8 @@
             },
             {
                 "network": "Instagram",
-                "username": "krvstian.ovczarek",
-                "url": "https://www.instagram.com/krvstian.ovczarek/",
+                "username": "code_sons",
+                "url": "https://www.instagram.com/code_sons/",
                 "x_icon": "fab fa-instagram"
             },
             {
@@ -62,8 +62,8 @@
     "work": [
         {
             "company": "Company",
-            "position": "President",
-            "website": "http://company.com",
+            "position": "CEO",
+            "website": "https://www.codesons.com",
             "startDate": "2013-01-01",
             "endDate": "2014-01-01",
             "summary": "Description...",

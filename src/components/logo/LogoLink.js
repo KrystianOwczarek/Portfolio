@@ -2,6 +2,7 @@ import React from "react";
 import { Link, Tooltip, Zoom } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Resume from "../../settings/resume.json";
+import {Logo} from './Logo';
 
 const useStyles = makeStyles((theme) => ({
   svg: {
@@ -33,6 +34,7 @@ export const LogoLink = () => {
           noWrap
           className={classes.svg}
       >
+      <Logo/>
       </Link>
     </Tooltip>
   );
